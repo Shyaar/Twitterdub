@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    color: #24A0ED;
+}
+
+i{
+    color: #fff;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+}
+
+
+#main-display{
+    display: flex;
+    justify-content: center;
+    width: 1140px;
+}
+
+
+/* this is the start of the left navigation bar */
+
+
+#Left-nav{
+    width: 20%;
+    height: 800px;
+    padding: 0 20px;
+    margin-top: 15px;
+}
+
+#logo{
+    color: white;
+    padding: 0 0 10px 0;
+}
+
+#grok{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M2.5 12c0-4.23 0-6.345 1.198-7.747q.256-.3.555-.555C5.655 2.5 7.77 2.5 12 2.5s6.345 0 7.747 1.198q.3.256.555.555C21.5 5.655 21.5 7.77 21.5 12s0 6.345-1.198 7.747q-.256.3-.555.555C18.345 21.5 16.23 21.5 12 21.5s-6.345 0-7.747-1.198q-.3-.256-.555-.555C2.5 18.345 2.5 16.23 2.5 12M8 17.5l8-10' color='%23000'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  margin-right: 20px;
+}
+
+#Grok{
+    margin: 10px;
+}
+
+ul li{
+    margin: 10px 0;
+    padding: 5px;
+    color: white;
+}
+
+ul li i{
+    margin: 0 12px;
+}
+
+.btn-nav{
+    display: inline-block;
+    background-color: #24A0ED;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 160px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border: none;
+}
+
+.profile-container{
+    display:flex ;
+    padding-right: 60px;
+}
+
+.profile-container img{
+    width: 32px;
+    border-radius: 100%;
+    margin: 0 12px;
+}
+
+.profile-name #heading{
+    font-size: 15px;
+    font-weight: 100px;
+    color: white;
+}
+
+.profile-name #sub-head{
+    font-size: 12px;
+    font-weight: 100px;
+    color: white;
+}
+
+.profile{
+    display: flex;
+    margin: 50px 0;
+}
+
+/* this is the start of the main content area */
+
+#Main-content{
+    color: #fff;
+    width: 60%;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 0 20px 0;
+}
+
+header ul{
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+header ul li a{
+    color: #fff;
+}
+
+.make-post img{
+    width: 32px;
+    border-radius: 100%;
+    margin: 0 12px;
+    display: inline-block;
+}
+
+.make-post{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#post-input{
+    background-color: transparent;
+    border: 0;
+}
+
+.post-attachments{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    margin-bottom: 15px;
+    
+}
+
+.post-attachments ul{
+    display: flex;
+}
+
+.post-attachments ul li{
+    width: 32px;
+}
+
+.post-attachments ul li i{
+    color: blue;
+}
+
+.btn-post{
+    display: inline-block;
+    background-color: rgba(36, 160, 237,0.5);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 64px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border: none;
+}
+
+.post-num{
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.post-num p{
+    color: rgba(36, 160, 237,0.5);
+}
+
+
+.feed{
+    padding: 10px 20px 10px 10px;
+    display: flex;
+}
+
+#feed-content-area{
+    width: 100%;
+
+}
+
+.feed-head{
+    display: flex;
+    
+}
+
+.username{display: flex;}
+
+#post-profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+    display: inline-block; 
+}
+ 
+#user-area{
+    display: flex;
+}
+
+.post-content p{
+    margin-bottom: 20px;
+}
+
+#post-media{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.post-interaction{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-interaction ul{
+    display: flex;
+}
+
+
+/* this is the start of the left aside */
+
+
+#Right-trends{
+    height: 800px;
+    width: 20%;
+    margin: 20px;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.place-holder{
+    width: 40px;
+    height: 30px;
+}
+
+.search input{
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+}
+
+.search i{
+    color: gray;
+    
+}
+
+.subscribe{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+
+.subscribe h3{
+    color: #fff;
+    font-size: 15px;  
+}
+
+
+.subscribe p{
+    color: #fff;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.sub-btn{
+    background-color: #24A0ED;
+    color: #fff;
+    padding: 6px 8px;
+    text-align: center;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+}
+
+.trends{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 10px 10px;
+}
+
+.trend-content{
+    display: flex;
+    margin: 20px 0;
+}
+
+.small-dot{
+    height: 5px;
+    width: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+    margin: 0 5px;
+}
+
+.trends p{
+    color: gray;
+    font-size: 10px;
+}
+
+div.category-info{
+    display: flex;
+    align-items: center;
+}
+
+.trnd-head{
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.trend-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trend-content-headline{
+    color: #fff;
+    margin: 5px 0;
+}
+
+.trend-content i{
+    color: gray;
+}
